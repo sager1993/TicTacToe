@@ -1,0 +1,25 @@
+body{
+  background-color: brown;
+}
+.row{
+  background-color: blue;
+}
+.container {
+    text-align: center;
+    margin-top: 150px;
+    background-color: aquamarine;
+  }
+  .grid {
+    width: 100px;
+    height: 100px;
+    border: solid black;
+    margin: 0;
+    display: inline-block;
+  }
+  .green {
+    background-color: green;
+  }
+  
+  .red {
+    background-color: red;
+  }
