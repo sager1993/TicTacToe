@@ -7,8 +7,9 @@ Step 2: Build Javascript for basic functions: colors boxes once hovered. Registe
 Step 3: Comment, simplify, and clean the code. Done
 Step 4: Build JS for two turns. Done
 Step 5: Build JS to check for winning. show message on console. Done
-Step 6: Comment, simplify, and clean the code.
-Step 7: Build prompt to show result, and end the game.  
+Step 6: Comment, simplify, and clean the code. Done
+Step 7: Build prompt to show result, and end the game.
 Step 8: Build a new game button.
 Step 9: Comment, simplify, and clean the code.
-Step 10: CSS.
+Step 10: Turn input into flexbox.
+Step 11: Create geometric shapes with CSS.
