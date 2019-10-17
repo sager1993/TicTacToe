@@ -3,8 +3,8 @@ body {
 }
 
 .box {
-  width: 100px;
-  height: 100px;
+  width: 50vh;
+  height: 50vh;
   border: solid black;
   margin: 0;
   background-color: gray;
@@ -13,14 +13,17 @@ body {
 }
 .game {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 30vh;
+  height: 98vh;
+  width: 98vh;
   background-color: pink;
   margin-bottom: 0;
   border: 0;
 }
 .grid {
-  width: 100px;
-  height: 100px;
+  width: 31%;
+  height: 31%;
+  margin: auto;
   border: solid transparent;
   margin: 0;
   display: inline-block;
@@ -28,17 +31,9 @@ body {
   margin-bottom: 0;
   padding: 0;
 }
-.row {
-  background-color: transparent;
-}
 
 .green {
-  width: 100px;
-  height: 100px;
-  background: white;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+  background-color: green;
 }
 
 .red {
@@ -64,9 +59,12 @@ body {
   order: 2;
   flex: 0 1 auto;
   align-self: center;
-  background: black;
+  background: transparent;
   margin-bottom: 0;
   padding: 0;
+  background-color: black;
+  height: 500px;
+  width: 500px;
 }
 
 .flex-item:nth-child(3) {
@@ -75,12 +73,12 @@ body {
   align-self: auto;
 }
 
-.row:nth-child(3) {
-  height: 106px;
-}
-
 .spanDiv {
-  height: 100%;
-  width: 100%;
-  background-color: yellow;
+  margin: auto;
+  padding: auto;
+  justify-self: center;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border: 25px solid blue;
 }

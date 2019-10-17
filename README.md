@@ -1,15 +1,10 @@
-## README Suggestions
-
-- List technologies used
-- Link to wireframes and user stories.
-- Document your planning and tell a story about your development process and problem-solving strategy.
-- List unsolved problems which would be fixed in future iterations.
-- Describe how you solved for the winner
-- Describe how some of your favorite functions work
-
 ## Name:
 
 Tic-Tac-Toe
+
+## Description:
+
+This is a tic-tac-toe game. It uses HTML, JavaScript, and CSS. HTML would show the user. It is a Unit 1 project as a part of SEI bootcamp class from GA.
 
 ## Usage:
 
@@ -21,6 +16,8 @@ You need to install a modern browser to render the HTML, CSS, and JavaScript.
 
 ## Roadmap:
 
+Add an aritifical intiligance function to play as the computer, and add responsive design for phones
+
 ## Authors and acknowledgment:
 
-This is a tic-tac-toe game. It uses HTML, JavaScript, and CSS. HTML would show the user
+Sager Alarifi
