@@ -6,6 +6,8 @@ let turnsCount;
 //  check for win state variable
 let winState;
 
+let gameOvr;
+
 //  Players input array
 const greenArr = [];
 const redArr = [];
@@ -37,6 +39,7 @@ function intializeListeners() {
   //  Initialize the win state
   winState = false;
 
+  gameOvr = false;
   //  Add listners to the grids
   for (let i = 0; i < grids.length; i++) {
     grids[i].addEventListener("click", clickEvent);
@@ -47,6 +50,8 @@ function intializeListeners() {
 
 //  Clear input by reassignning classes and reinitializing
 function clearInput() {
+  if (!gameOvr) endGame(4);
+
   for (let i = 0; i < grids.length; i++) {
     grids[i].className = "grid";
     const spanChild = grids[i].querySelector("span");
@@ -85,18 +90,17 @@ function clickEvent(event) {
     greenArr.push(event.target.id);
     if (turnsCount > 3) winState = checkForWin(greenArr);
     if (winState) {
-      score[0]++;
-      console.log("Green Has Won");
+      endGame(0);
+      gameOvr = true;
     }
   }
 
   if (event.target.classList.value.includes("red")) {
     redArr.push(event.target.id);
-    // spanAdd.classList.add("red");
     if (turnsCount > 3) winState = checkForWin(redArr);
     if (winState) {
-      console.log("Red has won");
-      score[1]++;
+      endGame(1);
+      gameOvr = true;
     }
   }
 
@@ -108,7 +112,16 @@ function clickEvent(event) {
   }
   if (turnsCount >= 9 && !winState) {
     console.log("It's a Tie");
-    score[2]++;
+    endGame(2);
+    gameOvr = true;
+  }
+
+  if (gameOvr == true) {
+    for (let i = 0; i < grids.length; i++) {
+      grids[i].removeEventListener("click", clickEvent);
+      grids[i].removeEventListener("mouseover", hoverEvent);
+      grids[i].removeEventListener("mouseleave", leaveEvent);
+    }
   }
 }
 
@@ -138,7 +151,8 @@ function checkForWin(playerArr) {
 }
 
 //  End of the game function
-function endGame() {
+function endGame(res) {
+  score[res]++;
   updateBoard();
 }
 

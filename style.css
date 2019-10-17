@@ -73,7 +73,7 @@ body {
   align-self: auto;
 }
 
-.spanDiv {
+.red > .spanDiv {
   margin: auto;
   padding: auto;
   justify-self: center;
@@ -81,4 +81,25 @@ body {
   height: 50%;
   border-radius: 50%;
   border: 25px solid blue;
+}
+
+.green > .spanDiv {
+  background: red;
+  height: 100px;
+  position: relative;
+  width: 20px;
+  align-self: center;
+  margin: auto;
+  transform: rotate(22deg);
+}
+
+.green > .spanDiv::after {
+  background: red;
+  content: "";
+  height: 20px;
+  left: -40px;
+  position: absolute;
+  top: 40px;
+  width: 100px;
+  transform: rotate(-45deg);
 }
