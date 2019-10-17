@@ -12,7 +12,7 @@ let gameOvr;
 const greenArr = [];
 const redArr = [];
 
-const score = [0, 0, 0, 0];
+let score = [0, 0, 0, 0];
 
 //  Winning object
 const winObj = {

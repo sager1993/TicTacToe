@@ -6,6 +6,10 @@ Tic-Tac-Toe
 
 This is a tic-tac-toe game. It uses HTML, JavaScript, and CSS. HTML would show the user. It is a Unit 1 project as a part of SEI bootcamp class from GA.
 
+## Wireframe:
+
+https://wireframe.cc/0d6REW
+
 ## Usage:
 
 It is a browser native Tic-Tac-Toe game. Players play against each other to get three similar signs in a row.
