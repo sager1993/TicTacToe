@@ -8,11 +8,15 @@ This is a tic-tac-toe game. It uses HTML, JavaScript, and CSS. HTML would show t
 
 ## Usage:
 
-It is a browser native Tic-Tac-Toe game. Players play against each other to get three similar signs in arow.
+It is a browser native Tic-Tac-Toe game. Players play against each other to get three similar signs in a row.
 
 ## Installation:
 
 You need to install a modern browser to render the HTML, CSS, and JavaScript.
+
+## Difficulties:
+
+CSS
 
 ## Roadmap:
 
